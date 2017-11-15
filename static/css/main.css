@@ -2552,6 +2552,11 @@
 				height: 50px;
 			}
 
+			table.alt tbody tr td.link-fixed {
+				width: 100px;
+				height: 100px;
+			}
+
 			table.alt tbody tr td.fixed {
 				table-layout: fixed;
 				width: 50px;

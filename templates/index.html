@@ -44,8 +44,9 @@
 											<tr>
 												<td class=fixed><img src="{{ profiledata['user']['profile_pic_url'] }}" alt="{{ username }}"></td>
 												<td>{{ profiledata['user']['full_name'] }}</td>
-												<td><a href="https://instagram.com/{{ username }}">{{ username }}</a></td>
+												<td class="icon fa-instagram"> {{ username }}</td>
 												<td>{{ profiledata['user']['biography'] }}</td>
+												<td class="link-fixed"><a href="https://instagram.com/{{ username }}" class="button special">Visit Page</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -72,7 +73,8 @@
 													<tr>
 														<td class=fixed><img src="{{ frow['profile_pic_url'] }}" alt="{{ frow['username'] }}"></td>
 														<td>{{ frow['full_name'] }}</td>
-														<td><a href="https://instagram.com/{{ frow['username'] }}">{{ frow['username'] }}</a></td>
+														<td class="icon fa-instagram"> {{ frow['username'] }}</td>
+														<td class="link-fixed"><a href="https://instagram.com/{{ frow['username'] }}" class="button special">Visit Page</a></td>
 													</tr>
 												{% endfor %}
 												</tbody>
@@ -94,7 +96,8 @@
 													<tr>
 														<td class=fixed><img src="{{ frow['profile_pic_url'] }}" alt="{{ frow['username'] }}"></td>
 														<td>{{ frow['full_name'] }}</td>
-														<td><a href="https://instagram.com/{{ frow['username'] }}">{{ frow['username'] }}</a></td>
+														<td class="icon fa-instagram"> {{ frow['username'] }}</td>
+														<td class="link-fixed"><a href="https://instagram.com/{{ frow['username'] }}" class="button special">Visit Page</a></td>
 													</tr>
 												{% endfor %}
 												</tbody>
