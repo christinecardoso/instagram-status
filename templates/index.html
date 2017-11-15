@@ -26,7 +26,8 @@
 								<h2>Account Info</h2>
 								<p>Getting followers/following lists for user @{{ username }}<br>
 								Current Followers {{ length }} - <a href="#Followers">Go to followers list</a><br>
-								Current Followings {{ felength }} - <a href="#Followings">Go to followings list</a></p>
+								Current Followings {{ felength }} - <a href="#Followings">Go to followings list</a><br><br>
+								<input class="button special" value="Export as CSV" onclick="exportTableToCSV('insta_list.csv')"></p>
 							</div>
 							<div class="inner">
 								<h2>Account Details</h2>
@@ -125,6 +126,7 @@
 			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
 			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}<![endif]-->
 			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/html2csv.js') }}" ></script>
 
 	</body>
 </html>
