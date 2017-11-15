@@ -10,6 +10,8 @@ You only need to have Flask installed.
 
 `pip3 install Flask`
 
+`pip3 install requests requests-toolbelt`
+
 `python3 main.py`
 
 Then go to http://localhost:5000 to see the result
