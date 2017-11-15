@@ -12,6 +12,8 @@ You only need to have Flask installed.
 
 `python3 main.py`
 
+Then go to http://localhost:5000 to see the result
+
 ### Screenshot
 
 ![screenshot.png](screenshot.png)
