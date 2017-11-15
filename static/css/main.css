@@ -15,7 +15,6 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -3282,7 +3281,7 @@
 
 		#wrapper > header .inner {
 			margin: 0 auto;
-			width: 55em;
+			width: 65em;
 		}
 
 		#wrapper > header h2 {
@@ -3308,7 +3307,7 @@
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
-			margin-bottom: -6.5em;
+			margin-bottom: -2.5em;
 		}
 
 	}
@@ -3348,7 +3347,7 @@
 
 	.wrapper {
 		background-color: #2e3141;
-		margin: 6.5em 0;
+		margin: 1em 0;
 		position: relative;
 	}
 
@@ -3366,7 +3365,6 @@
 
 		.wrapper:before, .wrapper:after {
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
 			content: '';
 			display: block;
 			height: 6.5em;
@@ -3384,7 +3382,7 @@
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.5em;
+			bottom: -1.5em;
 			left: 0;
 		}
 
@@ -3730,7 +3728,6 @@
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
