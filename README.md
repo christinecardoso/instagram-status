@@ -6,11 +6,11 @@ Set your username and password in **main.py** file and run it.
 
 ### Requirements
 
-You only need to have Flask installed.
+Install the requirement packages first:
 
-`pip3 install Flask`
+`pip3 install Flask requests requests-toolbelt`
 
-`pip3 install requests requests-toolbelt`
+Then simply run the code:
 
 `python3 main.py`
 
