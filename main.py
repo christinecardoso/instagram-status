@@ -11,21 +11,26 @@ else:
     print('Please set username/password first!')
     exit(1)
 
-app = Flask("instastatus")
+app = Flask('instastatus')
 
 
-@app.route("/")
+@app.route('/', methods=['GET', 'POST'])
 def main():
-    flist = insta.get_followers()
-    felist = insta.get_followings()
-    selfpr = insta.get_self_profile()
-    return render_template('index.html',
-                           flist=flist,
-                           felist=felist,
-                           length=len(flist),
-                           felength=len(felist),
-                           username=username,
-                           profiledata=selfpr)
+    if request.method == 'GET':
+        flist = insta.get_followers()
+        felist = insta.get_followings()
+        selfpr = insta.get_self_profile()
+        return render_template('index.html',
+                               flist=flist,
+                               felist=felist,
+                               length=len(flist),
+                               felength=len(felist),
+                               username=username,
+                               profiledata=selfpr)
+    elif request.method == 'POST':
+        unf = request.form['unfollow']
+        insta.unfollow(unf)
+        return render_template('unfollow.html', unf=unf)
 
 
 app.run(debug=True)

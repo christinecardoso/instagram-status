@@ -27,6 +27,7 @@
 								<p>Getting followers/following lists for user @{{ username }}<br>
 								Current Followers {{ length }} - <a href="#Followers">Go to followers list</a><br>
 								Current Followings {{ felength }} - <a href="#Followings">Go to followings list</a><br><br>
+								<input class="button special" type="button" value="Refresh List" onclick="location.reload();" />
 								<input class="button special" value="Export as CSV" onclick="exportTableToCSV('insta_list.csv')"></p>
 							</div>
 							<div class="inner">
@@ -99,6 +100,7 @@
 														<td>{{ frow['full_name'] }}</td>
 														<td class="icon fa-instagram"> {{ frow['username'] }}</td>
 														<td class="link-fixed"><a href="https://instagram.com/{{ frow['username'] }}" class="button special">Visit Page</a></td>
+														<td class="link-fixed"><form method="POST"><button class="button special" type="submit" name="unfollow" value="{{ frow['username'] }}">Unfollow</button></form></td>
 													</tr>
 												{% endfor %}
 												</tbody>
