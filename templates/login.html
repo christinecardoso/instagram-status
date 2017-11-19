@@ -17,6 +17,9 @@
     </div>
     <section id="wrapper">
         <header><div class="inner">
+                {% if error == True %}
+                <p>{{ text }}</p>
+                {% endif %}
                 <form method="post">
                     Username:<br>
                     <input type="text" name="username" >
