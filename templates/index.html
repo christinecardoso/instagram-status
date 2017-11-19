@@ -100,7 +100,7 @@
 														<td>{{ frow['full_name'] }}</td>
 														<td class="icon fa-instagram"> {{ frow['username'] }}</td>
 														<td class="link-fixed"><a href="https://instagram.com/{{ frow['username'] }}" class="button special">Visit Page</a></td>
-														<td class="link-fixed"><form method="POST"><button class="button special" type="submit" name="unfollow" value="{{ frow['username'] }}">Unfollow</button></form></td>
+														<td class="link-fixed"><form action="unf" method="POST"><button class="button special" type="submit" name="unfollow" value="{{ frow['username'] }}">Unfollow</button></form></td>
 													</tr>
 												{% endfor %}
 												</tbody>
