@@ -3,6 +3,8 @@ from insta_login import InstaLogin
 
 app = Flask('instastatus')
 insta = False
+
+
 @app.route('/', methods=['GET', 'POST'])
 def login():
     global insta
@@ -27,6 +29,7 @@ def login():
                                        profiledata=selfpr)
             except:
                 return("Username or password is wrong!")
+
 
 @app.route('/unf', methods=['POST'])
 def unf():
