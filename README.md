@@ -17,6 +17,7 @@ Then go to http://localhost:5000 to see the result
 ### ToDo
 
 - Unfollow should be applied in-place (With JQuery maybe) 
+- Support two-step authentication
 
 ### Contributers
 
