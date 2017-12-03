@@ -39,5 +39,13 @@ def unf():
     # Handles unfollow buttens. requests will be sent using POST
     unf = request.form['unfollow']
     insta.unfollow(unf)
+    return "[\n{\n\"status\" : \"OK\"\n}\n]"
+
+@app.route('/fol', methods=['POST'])
+def fol():
+    # Handles follow buttens. requests will be sent using POST
+    fol = request.form['follow']
+    insta.follow(fol)
+    return "[\n{\n\"status\" : \"OK\"\n}\n]"
 
 app.run(debug=True)
