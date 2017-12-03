@@ -5,6 +5,7 @@ app = Flask('instastatus')
 
 insta = False # variable used to indicate that user is logged-in
 
+
 @app.route('/', methods=['GET', 'POST'])
 def main():
     # function shows the login form if not logged in
@@ -31,6 +32,7 @@ def main():
                                    profiledata=selfpr)
         except:
             return render_template('login.html', error=True, text="Invalid Username or Password!")
+
 
 @app.route('/unf', methods=['POST'])
 def unf():
