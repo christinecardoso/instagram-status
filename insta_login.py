@@ -20,5 +20,9 @@ class InstaLogin(object):
         self.API.searchUsername(username)
         self.API.unfollow(self.API.LastJson['user']['pk'])
 
+    def follow(self, username):
+        self.API.searchUsername(username)
+        self.API.follow(self.API.LastJson['user']['pk'])
+
     def logout(self):
         self.API.logout()
