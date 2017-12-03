@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie9.css') }}" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" /><![endif]-->
+        <script src="{{ url_for('static', filename='js/unfollow.js') }}"></script>
 	</head>
 	<body>
 
@@ -100,7 +101,7 @@
 														<td>{{ frow['full_name'] }}</td>
 														<td class="icon fa-instagram"> {{ frow['username'] }}</td>
 														<td class="link-fixed"><a href="https://instagram.com/{{ frow['username'] }}" class="button special">Visit Page</a></td>
-														<td class="link-fixed"><form action="unf" method="POST"><button class="button special" type="submit" name="unfollow" value="{{ frow['username'] }}">Unfollow</button></form></td>
+														<td class="link-fixed"><button onclick="unfollow('{{ frow['username'] }}')"  class="button special" id="butten-unf-{{ frow['username'] }}">Unfollow</button></td>
 													</tr>
 												{% endfor %}
 												</tbody>
