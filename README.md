@@ -21,8 +21,8 @@ Then go to http://localhost:5000 to see the result
 
 ### Contributers
 
-- @poriyaMH
-- @shivai
+- [@poriyaMH](https://github.com/poriyaMH)
+- [@shivai](https://github.com/shivai)
 
 ### Screenshot
 
