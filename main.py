@@ -37,6 +37,5 @@ def unf():
     # Handles unfollow buttens. requests will be sent using POST
     unf = request.form['unfollow']
     insta.unfollow(unf)
-    return render_template('unfollow.html', unf=unf)
 
 app.run(debug=True)
